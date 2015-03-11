@@ -44,14 +44,14 @@ static inline int test_deref (unsigned long *usec)
 {
 	struct timeval start, end;
 	unsigned long val = 0;
-	unsigned long i;
+	unsigned long i, *ip = &i;
 	int ret;
 
 	ret = gettimeofday(&start, NULL);
 	if (ret)
 		goto err;
 	for (i = 0; i < NUM_CYCLES; i++)
-		val = *(&i);
+		val = *ip;
 	ret = gettimeofday(&end, NULL);
 	if (ret)
 		goto err;
