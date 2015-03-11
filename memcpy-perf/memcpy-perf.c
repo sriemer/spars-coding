@@ -40,7 +40,7 @@ static void sub_timeval (struct timeval *a, struct timeval *b)
 	a->tv_usec -= b->tv_usec;
 }
 
-static inline int test_deref (void)
+static inline int test_deref (unsigned long *usec)
 {
 	struct timeval start, end;
 	unsigned long val = 0;
@@ -58,6 +58,7 @@ static inline int test_deref (void)
 	sub_timeval(&end, &start);
 	printf("deref:    sec %lu, usec %lu\n",
 		end.tv_sec, end.tv_usec);
+	*usec = end.tv_sec * 1000000 + end.tv_usec;
 
 	/* just avoid a compiler warning */
 	if (val == 0)
@@ -69,7 +70,7 @@ err:
 	return ret;
 }
 
-static inline int test_memcpy (void)
+static inline int test_memcpy (unsigned long *usec)
 {
 	struct timeval start, end;
 	unsigned long val = 0;
@@ -87,6 +88,7 @@ static inline int test_memcpy (void)
 	sub_timeval(&end, &start);
 	printf("memcpy(): sec %lu, usec %lu\n",
 		end.tv_sec, end.tv_usec);
+	*usec = end.tv_sec * 1000000 + end.tv_usec;
 
 	/* just avoid a compiler warning */
 	if (val == 0)
@@ -101,14 +103,20 @@ err:
 int main (void)
 {
 	int j, ret;
+	float overhead;
 
 	for (j = 0; j < 3; j++) {
-		ret = test_memcpy();
+		unsigned long memcpy_usec, deref_usec;
+
+		ret = test_memcpy(&memcpy_usec);
 		if (ret)
 			goto err;
-		ret = test_deref();
+		ret = test_deref(&deref_usec);
 		if (ret)
 			goto err;
+
+		overhead = (float) memcpy_usec * 100 / (float) deref_usec - 100;
+		printf("memcpy() overhead: %.1f%%\n", overhead);
 	}
 	return 0;
 err:
