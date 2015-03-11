@@ -14,10 +14,21 @@
  * support both?
  *
  * Expected result:
- * Depending on the CPU using memcpy() has 3 to 6% overhead on x86_64.
- * So it's worth dereferencing if possible.
+ * Really using memcpy() has > 150% overhead on x86_64. This is why GCC
+ * replaces it with dereferencing if possible. That's exactly what we want!
+ * We can always use memcpy() in the code and GCC will optimize it away.
  *
- * Compile: gcc -O0 -g -Wall -fno-builtin-memcpy -o memcpy-perf memcpy-perf.c
+ * Synthetic tests are really not exactly the same. So always disassemble with
+ * "objdump -S" to check what the compiler makes out of your C code!
+ *
+ * 1. Compile: gcc -O0 -g -Wall -fno-builtin-memcpy -o memcpy-perf memcpy-perf.c
+ * 2. run ./memcpy-perf
+ * 3. disassemble with "objdump -S ./memcpy-perf | less", search for "memcpy\("
+ * 4. Clean up the build and compile without '-fno-builtin-memcpy'
+ * 5. run ./memcpy-perf
+ * 6. disassemble with "objdump -S ./memcpy-perf | less", search for "memcpy\("
+ *
+ * Do you see the difference?
  */
 
 #include <stdio.h>
