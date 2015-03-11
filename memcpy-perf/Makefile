@@ -4,6 +4,8 @@ DEFINES = -D VERSION='$(VERSION)' \
           -D PROGRAM_NAME='"$(PROGRAM_NAME)"'
 CC = gcc
 CFLAGS += -O0 -g -Wall -m64 $(DEFINES)
+# comment this out to see how GCC replaces memcpy() with deferencing
+CFLAGS += -fno-builtin-memcpy
 LINK = gcc
 LDFLAGS += -m64
 SRCS = $(wildcard *.c)

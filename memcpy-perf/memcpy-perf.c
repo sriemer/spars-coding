@@ -17,7 +17,7 @@
  * Depending on the CPU using memcpy() has 3 to 6% overhead on x86_64.
  * So it's worth dereferencing if possible.
  *
- * Compile: gcc -O0 -g -Wall -o memcpy-perf memcpy-perf.c
+ * Compile: gcc -O0 -g -Wall -fno-builtin-memcpy -o memcpy-perf memcpy-perf.c
  */
 
 #include <stdio.h>
