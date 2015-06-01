@@ -25,7 +25,7 @@ depend: .depend
 	rm -f ./.depend
 	$(CC) $(CFLAGS) -MM $(SRCS) >> ./.depend
 
-include .depend
+-include .depend
 
 clean:
 	rm -f *.o ./.depend $(PROGRAM_NAME)
