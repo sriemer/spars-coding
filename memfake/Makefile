@@ -3,9 +3,8 @@ VERSION = "0.0.1"
 DEFINES = -D VERSION='$(VERSION)' \
           -D PROGRAM_NAME='"$(PROGRAM_NAME)"'
 CC = gcc
-CFLAGS += -O0 -g -Wall -m64 $(DEFINES)
+CFLAGS += -O0 -g -Wall $(DEFINES)
 LINK = gcc
-LDFLAGS += -m64
 SRCS = $(wildcard *.c)
 OBJS = $(SRCS:.c=.o)
 
