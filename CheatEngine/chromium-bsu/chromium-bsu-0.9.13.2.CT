@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="18">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"Lives"</Description>
+      <LastState Value="9" Activated="1" RealAddress="002DE600"/>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>004496EC</Address>
+      <Offsets>
+        <Offset>B0</Offset>
+      </Offsets>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Toggle Activation Allow Increase</Action>
+          <Keys>
+            <Key>112</Key>
+          </Keys>
+          <Value>9</Value>
+          <Description>Toggle Lives Freezing</Description>
+          <ID>0</ID>
+        </Hotkey>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>112</Key>
+          </Keys>
+          <Value>9</Value>
+          <Description>Set Lives to 9</Description>
+          <ID>1</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"Damage"</Description>
+      <LastState Value="-500" Activated="1" RealAddress="002DE630"/>
+      <Color>80000008</Color>
+      <VariableType>Float</VariableType>
+      <Address>004496EC</Address>
+      <Offsets>
+        <Offset>E0</Offset>
+      </Offsets>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Toggle Activation Allow Decrease</Action>
+          <Keys>
+            <Key>113</Key>
+          </Keys>
+          <Value>-500</Value>
+          <Description>Toggle Damage Freezing</Description>
+          <ID>0</ID>
+        </Hotkey>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>113</Key>
+          </Keys>
+          <Value>-500</Value>
+          <Description>Set Damage to -500</Description>
+          <ID>1</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"Shield"</Description>
+      <LastState Value="1000" Activated="1" RealAddress="002DE634"/>
+      <Color>80000008</Color>
+      <VariableType>Float</VariableType>
+      <Address>004496EC</Address>
+      <Offsets>
+        <Offset>E4</Offset>
+      </Offsets>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Toggle Activation Allow Increase</Action>
+          <Keys>
+            <Key>113</Key>
+          </Keys>
+          <Value>1000</Value>
+          <Description>Toggle Shield Freezing</Description>
+          <ID>0</ID>
+        </Hotkey>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>113</Key>
+          </Keys>
+          <Value>1000</Value>
+          <Description>Set Shield to 1000</Description>
+          <ID>1</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"Ammo_0"</Description>
+      <LastState Value="150" Activated="1" RealAddress="002DE614"/>
+      <Color>80000008</Color>
+      <VariableType>Float</VariableType>
+      <Address>004496EC</Address>
+      <Offsets>
+        <Offset>C4</Offset>
+      </Offsets>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Toggle Activation Allow Increase</Action>
+          <Keys>
+            <Key>114</Key>
+          </Keys>
+          <Value>150</Value>
+          <Description>Toggle Ammo_0 Freezing</Description>
+          <ID>0</ID>
+        </Hotkey>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>114</Key>
+          </Keys>
+          <Value>150</Value>
+          <Description>Set Ammo_0 to 150</Description>
+          <ID>1</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>4</ID>
+      <Description>"Ammo_1"</Description>
+      <LastState Value="150" Activated="1" RealAddress="002DE618"/>
+      <Color>80000008</Color>
+      <VariableType>Float</VariableType>
+      <Address>004496EC</Address>
+      <Offsets>
+        <Offset>C8</Offset>
+      </Offsets>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Toggle Activation Allow Increase</Action>
+          <Keys>
+            <Key>114</Key>
+          </Keys>
+          <Value>150</Value>
+          <Description>Toggle Ammo_1 Freezing</Description>
+          <ID>0</ID>
+        </Hotkey>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>114</Key>
+          </Keys>
+          <Value>150</Value>
+          <Description>Set Ammo_1 to 150</Description>
+          <ID>1</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>5</ID>
+      <Description>"Ammo_2"</Description>
+      <LastState Value="150" Activated="1" RealAddress="002DE61C"/>
+      <Color>80000008</Color>
+      <VariableType>Float</VariableType>
+      <Address>004496EC</Address>
+      <Offsets>
+        <Offset>CC</Offset>
+      </Offsets>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Toggle Activation Allow Increase</Action>
+          <Keys>
+            <Key>114</Key>
+          </Keys>
+          <Value>150</Value>
+          <Description>Toggle Ammo_2 Freezing</Description>
+          <ID>0</ID>
+        </Hotkey>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>114</Key>
+          </Keys>
+          <Value>150</Value>
+          <Description>Set Ammo_2 to 150</Description>
+          <ID>1</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>6</ID>
+      <Description>"Ammo_0_en"</Description>
+      <LastState Value="1" Activated="1" RealAddress="002DE59C"/>
+      <Color>80000008</Color>
+      <VariableType>Byte</VariableType>
+      <Address>004496EC</Address>
+      <Offsets>
+        <Offset>4C</Offset>
+      </Offsets>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>114</Key>
+          </Keys>
+          <Value>1</Value>
+          <Description>Enable Ammo_0</Description>
+          <ID>0</ID>
+        </Hotkey>
+        <Hotkey>
+          <Action>Activate</Action>
+          <Keys>
+            <Key>114</Key>
+          </Keys>
+          <Value>1</Value>
+          <Description>Freeze enabled Ammo_0</Description>
+          <ID>1</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>7</ID>
+      <Description>"Ammo_1_en"</Description>
+      <LastState Value="1" Activated="1" RealAddress="002DE59D"/>
+      <Color>80000008</Color>
+      <VariableType>Byte</VariableType>
+      <Address>004496EC</Address>
+      <Offsets>
+        <Offset>4D</Offset>
+      </Offsets>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>114</Key>
+          </Keys>
+          <Value>1</Value>
+          <Description>Enable Ammo_1</Description>
+          <ID>0</ID>
+        </Hotkey>
+        <Hotkey>
+          <Action>Activate</Action>
+          <Keys>
+            <Key>114</Key>
+          </Keys>
+          <Value>1</Value>
+          <Description>Freeze enabled Ammo_1</Description>
+          <ID>1</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>8</ID>
+      <Description>"Ammo_2_en"</Description>
+      <LastState Value="1" Activated="1" RealAddress="002DE59E"/>
+      <Color>80000008</Color>
+      <VariableType>Byte</VariableType>
+      <Address>004496EC</Address>
+      <Offsets>
+        <Offset>4E</Offset>
+      </Offsets>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>114</Key>
+          </Keys>
+          <Value>1</Value>
+          <Description>Enable Ammo_2</Description>
+          <ID>0</ID>
+        </Hotkey>
+        <Hotkey>
+          <Action>Activate</Action>
+          <Keys>
+            <Key>114</Key>
+          </Keys>
+          <Value>1</Value>
+          <Description>Freeze enabled Ammo_2</Description>
+          <ID>1</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
