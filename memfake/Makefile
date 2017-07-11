@@ -1,5 +1,5 @@
 PROGRAM_NAME = memfake
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 DEFINES = -D VERSION='$(VERSION)' \
           -D PROGRAM_NAME='"$(PROGRAM_NAME)"'
 CC = gcc

@@ -8,7 +8,7 @@
 
 int main (void)
 {
-	long *data = (long *) calloc(1, 500 * 1024 * 1024);
+	long *data = (long *) calloc(1, 1500 * 1024 * 1024);
 
 	if (!data)
 		return -1;
