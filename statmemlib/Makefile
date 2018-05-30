@@ -4,7 +4,7 @@ DEFINES = -D VERSION='$(VERSION)' \
           -D PROGRAM_NAME='"$(PROGRAM_NAME)"'
 CC = gcc
 CFLAGS += -O0 -g -Wall $(DEFINES)
-LDFLAGS += -Llib1 -Llib2 -l1 -l2
+LDFLAGS += -Llib1 -Llib2 -l1 -l2 -ldl
 LINK = gcc
 SRCS = $(wildcard *.c)
 OBJS = $(SRCS:.c=.o)
@@ -28,11 +28,13 @@ depend: .depend
 libs:
 	make -C lib1
 	make -C lib2
+	make -C lib3
 
 clean:
 	rm -f *.o ./.depend $(PROGRAM_NAME)
 	make -C lib1 clean
 	make -C lib2 clean
+	make -C lib3 clean
 
 distclean:
 	rm -f debian/$(PROGRAM_NAME).*.debhelper debian/$(PROGRAM_NAME).*.log
