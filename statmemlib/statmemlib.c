@@ -26,7 +26,7 @@ int main (void)
 			secs_to_load--;
 		} else if (secs_to_load == 0) {
 			secs_to_load--;
-			lib3_handle = dlopen("lib3/lib3.a", RTLD_LAZY);
+			lib3_handle = dlopen("lib3/lib3.so", RTLD_LAZY);
 			if (lib3_handle)
 				get_magic_val3 = (int (*)(void)) dlsym(lib3_handle, "get_magic_val3");
 			else

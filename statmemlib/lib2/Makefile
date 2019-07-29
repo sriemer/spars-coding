@@ -1,10 +1,10 @@
-LIB_NAME = lib2.a
+LIB_NAME = lib2.so
 VERSION = "0:0:0"
 DEFINES = -D VERSION='$(VERSION)' \
           -D LIB_NAME='"$(LIB_NAME)"'
 CC = gcc
-CFLAGS += -O0 -g -Wall $(DEFINES)
-LDFLAGS += -fPIC -shared
+CFLAGS += -O0 -fpic -g -Wall $(DEFINES)
+LDFLAGS += -shared
 LINK = gcc
 SRCS = $(wildcard *.c)
 OBJS = $(SRCS:.c=.o)
